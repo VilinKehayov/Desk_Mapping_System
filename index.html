@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk Mapping System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Desk Mapping System</h1>
+
+    <div class="map-container">
+        <h2>Map</h2>
+        <!-- Map area will be added here dynamically -->
+    </div>
+
+    <div class="form-container">
+        <h2>Create New Desk</h2>
+        <form id="desk-form">
+            <label for="desk-name">Desk Name:</label>
+            <input type="text" id="desk-name" name="name" required>
+
+            <label for="desk-symbol">Desk Symbol:</label>
+            <input type="text" id="desk-symbol" name="symbol" required>
+
+            <button type="submit">Create</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

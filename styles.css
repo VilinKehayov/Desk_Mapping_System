@@ -1,0 +1,85 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Page title styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Map container styles */
+.map-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px; /* Updated padding */
+  background-color: skyblue; /* Updated background color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.update-button,
+button.delete-button {
+  padding: 5px 10px; /* Updated padding */
+  font-size: 10px; /* Updated font size */
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.update-button:hover,
+button.delete-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  /* Two-column layout */
+  .map-container,
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
